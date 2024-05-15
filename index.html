@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
 
+
+<script src="auth.js" type="module"></script>
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocity Education Platform</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+            background-image: url('../backgrounds/Background 10.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            width: 100vw;
+            height: 100vh;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+
+            nav ul {
+                display: none;
+            }
+
+        nav a:hover, nav a:focus {
+            color: #4a90e2;
+            text-decoration: underline;
+        }
+
+
+        .logo {
+            height: 120px;
+            width: 200px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen bg-cover bg-center">
+    <header class="bg-black text-white py-4">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <button id="menu-toggle" class="text-white md:hidden">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <img src="../backgrounds/VelocityS.Logo.png" alt="VelocityS Logo" class="logo">
+            </div>
+            <div class="hidden md:flex items-center space-x-8" id="nav-menu">
+                <a href="#" class="hover:text-gray-300">About us</a>
+                <a href="#" class="hover:text-gray-300">Courses</a>
+                <a href="#" class="hover:text-gray-300">Community</a>
+                <a href="#" class="hover:text-gray-300">CareerPath Pro</a>
+                <form class="flex items-center">
+                    <input type="text" placeholder="Search" class="bg-gray-800 text-white px-8 py-2 rounded-l-md focus:outline-none">
+                    <button type="submit" class="bg-gray-800 text-white px-4 py-2 rounded-r-md hover:bg-gray-700 focus:outline-none">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <button id="sign-in-btn" class="bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700 focus:outline-none">Sign In</button>
+                <button id="sign-up-btn" class="bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700 focus:outline-none">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+
+
+
+</body>
+</html>
